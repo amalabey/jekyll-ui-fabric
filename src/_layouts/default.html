@@ -3,13 +3,22 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="ms-Fabric">
 
     {% include header.html %}
-    <div id="root"></div>
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+
+    <div class="ms-Grid" dir="ltr">
+      <div class="ms-Grid-row">
+        <div class="ms-Grid-col ms-sm12 ms-md2 ms-lg3">
+          <div id="root"></div>
+        </div>
+        <div class="ms-Grid-col ms-sm12 ms-md10 ms-lg9">
+          <div class="page-content">
+            <div class="wrapper">
+              {{ content }}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
