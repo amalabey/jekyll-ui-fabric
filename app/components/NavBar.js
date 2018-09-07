@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { Nav, INavProps } from 'office-ui-fabric-react/lib/Nav';
+import { initializeIcons } from 'office-ui-fabric-react/lib/Icons';
+
+initializeIcons();
 
 class NavBar extends Component {
   render() {
@@ -24,7 +27,7 @@ class NavBar extends Component {
                   name: 'BIDashboard',
                   url: 'http://cnn.com',
                   onClick: this._onClickHandler2,
-                  iconProps: { iconName: 'BIDashboard' },
+                  icon: 'BIDashboard',
                   key: 'key9'
                 }
               ]
